@@ -1,0 +1,30 @@
+all: SDL_render_rect SDL_render_image SDL_window
+	@echo "Finishing..."
+
+SDL_render_rect: SDL_render_rect.o 
+	@echo "Linking render_rect..."
+	@g++ SDL_render_rect.o -lSDL2 -o SDL_render_rect
+
+SDL_render_rect.o: SDL_render_rect.cpp
+	@echo "Compiling render_rect..."
+	@g++ -c SDL_render_rect.cpp -Wall
+
+SDL_render_image: SDL_render_image.o 
+	@echo "Linking render_image..."
+	@g++ SDL_render_image.o -lSDL2 -o SDL_render_image
+
+SDL_render_image.o: SDL_render_image.cpp
+	@echo "Compiling render_image..."
+	@g++ -c SDL_render_image.cpp -Wall
+
+SDL_window: SDL_window.o 
+	@echo "Linking window..."
+	@g++ SDL_window.o -lSDL2 -o SDL_window
+
+SDL_window.o: SDL_window.cpp
+	@echo "Compiling window..."
+	@g++ -c SDL_window.cpp -Wall
+
+clean: 
+	@echo "Cleaning..."
+	@rm *.o

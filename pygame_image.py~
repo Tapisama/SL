@@ -1,0 +1,11 @@
+import pygame,sys
+
+pygame.init();#initialize pygame
+screen=pygame.display.set_mode((640,460))#create the screen
+pygame.display.set_caption("Pygame tutorial")#sets the screen name
+image=pygame.image.load('helloworld.bmp')#image to use
+screen.fill((255,255,255))#color to clear the screen
+screen.blit(image,(100,100,image.get_width(),image.get_height()))#blits image into screen surface
+pygame.display.update()#updates the screen
+pygame.time.delay(2000)#paauses for 2 seconds
+pygame.quit()

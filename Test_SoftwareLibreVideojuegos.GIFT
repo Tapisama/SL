@@ -1,0 +1,105 @@
+// Formato del cuestionario:
+//
+// - A continuación de "$CATEGORY: $course$/Valor por defecto para Software Libre y Compromiso Social/" 
+//   poner el nombre del trabajo y apellidos de autor o autores. Ejemplo: GIT-GomezBachiller
+//
+// - Debe tener 10 preguntas.
+//
+// - La sintaxis de las preguntas es 
+//	enunciado de la pregunta{
+//	~%-50%respuesta incorrecta 1.
+//	~%-50%respuesta incorrecta 2.
+//	=respuesta correcta.
+//	~%-50%respuesta incorrecta 3.
+//	}	
+//
+// - Todas las preguntas deben tener 4 opciones y solo una correcta.
+//	Las incorrectas precedidas por "~%-50%"
+//	La única correcta precedida de "="
+//
+// - Evitar poner la respuesta correcta en la misma posición.
+//
+// - A continuación puedes ver como ejemplo el cuestionario del trabajo sobre GIT presentado por Sergio Gomez Bachiller 
+
+$CATEGORY: $course$/Valor por defecto para Software Libre y Compromiso Social/SoftwareLibreVideojuegos-TapiaMerino
+
+// 1
+¿Cual de las siguiente herramientas es libre?{
+~%-50%Unity3D.
+~%-50%Unreal engine.
+~%-50%GameMaker.
+=Ninguna de las anteriores.
+}
+
+// 2
+¿Cual de los siguientes es una desventaja de las herramientas privativas mostradas?{
+~%-50%Agilidad en el desarrollo.
+~%-50%Alto coste.
+=Incapacidad de ver el código.
+~%-50%Ninguna de las anteriores.
+}
+
+// 3
+¿Para qué puede usarse OpenGL?{
+=Todo tipo de gráfico por ordenador.
+~%-50%Solamente 3D.
+~%-50%Solamente 2.5D y 3D.
+~%-50%Solamente 2D.
+}
+
+// 4
+¿Cual de las siguiente herramientas no puede ser usada en C++?{
+~%-50%Cocos2D.
+~%-50%SFML.
+=LibGDX.
+~%-50%Ninguna puede usarse en C++.
+}
+
+// 5
+SDL nos da acceso a:{
+=Perifericos de entrada,audio,y graficos.
+~%-50%Audio y gráficos.
+~%-50%Perifericos de entrada y gráficos.
+~%-50%Solamente gráficos.
+}
+
+// 6
+SDL puede ser usado para:{
+~%-50%Solamente 2D.
+=2D y 3D mediante OpenGL.
+~%-50%2D y 3D por igual.
+~%-50%Solamente 3D.
+}
+
+// 7
+¿A qué librería extiende pygame?{
+~%-50%Cocos2D.
+~%-50%Allegro.
+=SDL.
+~%-50%SFML.
+}
+
+// 8
+¿Cual de las siguientes afirmaciones es verdadera?{
+~%-50%Box2D permite la generación de gráficos.
+~%-50%Box2D maneja físicas tanto 2D como 3D.
+=Es necesario el uso de herramientas de terceros para mostrar por pantalla los elementos de Box2D.
+~%-50%Box2D es incompatible con OpenGL.
+}
+
+// 9
+¿Cual de las siguientes herramientas no permiten la distribución comercial de los productos desarrollados con ellas?{
+~%-50%Pygame
+~%-50%SDL
+~%-50%Box2D
+=Ninguna de las anteriores.
+}
+
+// 10
+¿Cual de las siguientes herramientas se distribuye bajo licencia con copyleft?{
+=Pygame.
+~%-50%SDL.
+~%-50%Box2D.
+~%-50%inguna de las anteriores.
+
+}
